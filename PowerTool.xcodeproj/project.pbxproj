@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		17656D7D2D81E1030070D12C /* PowerToolFinderExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 17656D752D81E1030070D12C /* PowerToolFinderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		17656CEA2D7B1AD90070D12C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,28 +25,112 @@
 			remoteGlobalIDString = 17656CD72D7B1AD80070D12C;
 			remoteInfo = PowerTool;
 		};
+		17656D7B2D81E1030070D12C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17656CD02D7B1AD80070D12C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17656D742D81E1030070D12C;
+			remoteInfo = PowerToolFinderExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17656D3A2D7B28BE0070D12C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				17656D7D2D81E1030070D12C /* PowerToolFinderExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		17656CD82D7B1AD80070D12C /* PowerTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17656CE92D7B1AD90070D12C /* PowerToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17656CF32D7B1AD90070D12C /* PowerToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17656D752D81E1030070D12C /* PowerToolFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PowerToolFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		17656DE82D81F05B0070D12C /* Exceptions for "PowerToolFinderExtension" folder in "PowerToolFinderExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FinderExtension.swift,
+			);
+			target = 17656D742D81E1030070D12C /* PowerToolFinderExtension */;
+		};
+		17656DE92D81F05B0070D12C /* Exceptions for "PowerToolTests" folder in "PowerToolTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PowerToolTests.swift,
+			);
+			target = 17656CE82D7B1AD90070D12C /* PowerToolTests */;
+		};
+		17656DEA2D81F05B0070D12C /* Exceptions for "PowerToolUITests" folder in "PowerToolUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PowerToolUITests.swift,
+				PowerToolUITestsLaunchTests.swift,
+			);
+			target = 17656CF22D7B1AD90070D12C /* PowerToolUITests */;
+		};
+		17656DED2D81F1250070D12C /* Exceptions for "Strcuts" folder in "PowerTool" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FileType.swift,
+			);
+			target = 17656CD72D7B1AD80070D12C /* PowerTool */;
+		};
+		17656DEF2D81F14F0070D12C /* Exceptions for "Strcuts" folder in "PowerToolFinderExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				FileType.swift,
+			);
+			target = 17656D742D81E1030070D12C /* PowerToolFinderExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		17656CDA2D7B1AD80070D12C /* PowerTool */ = {
+		17656DCC2D81F05B0070D12C /* PowerTool */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PowerTool;
 			sourceTree = "<group>";
 		};
-		17656CEC2D7B1AD90070D12C /* PowerToolTests */ = {
+		17656DD02D81F05B0070D12C /* PowerToolFinderExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				17656DE82D81F05B0070D12C /* Exceptions for "PowerToolFinderExtension" folder in "PowerToolFinderExtension" target */,
+			);
+			path = PowerToolFinderExtension;
+			sourceTree = "<group>";
+		};
+		17656DD22D81F05B0070D12C /* PowerToolTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				17656DE92D81F05B0070D12C /* Exceptions for "PowerToolTests" folder in "PowerToolTests" target */,
+			);
 			path = PowerToolTests;
 			sourceTree = "<group>";
 		};
-		17656CF62D7B1AD90070D12C /* PowerToolUITests */ = {
+		17656DD52D81F05B0070D12C /* PowerToolUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				17656DEA2D81F05B0070D12C /* Exceptions for "PowerToolUITests" folder in "PowerToolUITests" target */,
+			);
 			path = PowerToolUITests;
+			sourceTree = "<group>";
+		};
+		17656DEC2D81F1190070D12C /* Strcuts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				17656DED2D81F1250070D12C /* Exceptions for "Strcuts" folder in "PowerTool" target */,
+				17656DEF2D81F14F0070D12C /* Exceptions for "Strcuts" folder in "PowerToolFinderExtension" target */,
+			);
+			path = Strcuts;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,15 +157,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17656D722D81E1030070D12C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		17656CCF2D7B1AD80070D12C = {
 			isa = PBXGroup;
 			children = (
-				17656CDA2D7B1AD80070D12C /* PowerTool */,
-				17656CEC2D7B1AD90070D12C /* PowerToolTests */,
-				17656CF62D7B1AD90070D12C /* PowerToolUITests */,
+				17656DEB2D81F1120070D12C /* Shared */,
+				17656DCC2D81F05B0070D12C /* PowerTool */,
+				17656DD02D81F05B0070D12C /* PowerToolFinderExtension */,
+				17656DD22D81F05B0070D12C /* PowerToolTests */,
+				17656DD52D81F05B0070D12C /* PowerToolUITests */,
 				17656CD92D7B1AD80070D12C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +185,17 @@
 				17656CD82D7B1AD80070D12C /* PowerTool.app */,
 				17656CE92D7B1AD90070D12C /* PowerToolTests.xctest */,
 				17656CF32D7B1AD90070D12C /* PowerToolUITests.xctest */,
+				17656D752D81E1030070D12C /* PowerToolFinderExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		17656DEB2D81F1120070D12C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				17656DEC2D81F1190070D12C /* Strcuts */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,13 +208,15 @@
 				17656CD42D7B1AD80070D12C /* Sources */,
 				17656CD52D7B1AD80070D12C /* Frameworks */,
 				17656CD62D7B1AD80070D12C /* Resources */,
+				17656D3A2D7B28BE0070D12C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				17656D7C2D81E1030070D12C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				17656CDA2D7B1AD80070D12C /* PowerTool */,
+				17656DCC2D81F05B0070D12C /* PowerTool */,
 			);
 			name = PowerTool;
 			packageProductDependencies = (
@@ -130,9 +238,6 @@
 			dependencies = (
 				17656CEB2D7B1AD90070D12C /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				17656CEC2D7B1AD90070D12C /* PowerToolTests */,
-			);
 			name = PowerToolTests;
 			packageProductDependencies = (
 			);
@@ -153,15 +258,31 @@
 			dependencies = (
 				17656CF52D7B1AD90070D12C /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				17656CF62D7B1AD90070D12C /* PowerToolUITests */,
-			);
 			name = PowerToolUITests;
 			packageProductDependencies = (
 			);
 			productName = PowerToolUITests;
 			productReference = 17656CF32D7B1AD90070D12C /* PowerToolUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		17656D742D81E1030070D12C /* PowerToolFinderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17656D7F2D81E1030070D12C /* Build configuration list for PBXNativeTarget "PowerToolFinderExtension" */;
+			buildPhases = (
+				17656D712D81E1030070D12C /* Sources */,
+				17656D722D81E1030070D12C /* Frameworks */,
+				17656D732D81E1030070D12C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PowerToolFinderExtension;
+			packageProductDependencies = (
+			);
+			productName = PowerToolFinderExtension;
+			productReference = 17656D752D81E1030070D12C /* PowerToolFinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -184,6 +305,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 17656CD72D7B1AD80070D12C;
 					};
+					17656D742D81E1030070D12C = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 17656CD32D7B1AD80070D12C /* Build configuration list for PBXProject "PowerTool" */;
@@ -203,6 +327,7 @@
 				17656CD72D7B1AD80070D12C /* PowerTool */,
 				17656CE82D7B1AD90070D12C /* PowerToolTests */,
 				17656CF22D7B1AD90070D12C /* PowerToolUITests */,
+				17656D742D81E1030070D12C /* PowerToolFinderExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +348,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		17656CF12D7B1AD90070D12C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17656D732D81E1030070D12C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +385,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17656D712D81E1030070D12C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = 17656CD72D7B1AD80070D12C /* PowerTool */;
 			targetProxy = 17656CF42D7B1AD90070D12C /* PBXContainerItemProxy */;
+		};
+		17656D7C2D81E1030070D12C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17656D742D81E1030070D12C /* PowerToolFinderExtension */;
+			targetProxy = 17656D7B2D81E1030070D12C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +541,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PowerTool/Preview Content\"";
+				DEVELOPMENT_TEAM = 8A4RDR65Z9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -422,6 +567,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PowerTool/Preview Content\"";
+				DEVELOPMENT_TEAM = 8A4RDR65Z9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -501,6 +647,60 @@
 			};
 			name = Release;
 		};
+		17656D802D81E1030070D12C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PowerToolFinderExtension/PowerToolFinderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A4RDR65Z9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PowerToolFinderExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PowerToolFinderExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Omer-Dan.PowerTool.PowerToolFinderExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		17656D812D81E1030070D12C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PowerToolFinderExtension/PowerToolFinderExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A4RDR65Z9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PowerToolFinderExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PowerToolFinderExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Omer-Dan.PowerTool.PowerToolFinderExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,6 +736,15 @@
 			buildConfigurations = (
 				17656D042D7B1AD90070D12C /* Debug */,
 				17656D052D7B1AD90070D12C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17656D7F2D81E1030070D12C /* Build configuration list for PBXNativeTarget "PowerToolFinderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17656D802D81E1030070D12C /* Debug */,
+				17656D812D81E1030070D12C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
